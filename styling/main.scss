@@ -1,0 +1,43 @@
+@import "./fonts.scss";
+@import "./palette.scss";
+@import "./header.scss";
+
+*, *:before, *:after {
+    box-sizing: content-box;
+}
+
+.align-v{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+html, body {
+    box-sizing: inherit;
+    font-family: Roboto;
+    margin: 0;
+}
+
+section.page-wrapper {
+    width: 80vw;
+    margin: auto;
+    height: 90vh;
+    .hero {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 40px;
+        height: 80%;
+        &__thumb {
+            overflow: hidden;
+            img#pizza {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        &__text h2 {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 4.4rem;
+            margin: 0;
+        }
+    }
+}

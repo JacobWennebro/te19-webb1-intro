@@ -1,0 +1,36 @@
+$a: ".header";
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: $blue;
+    &__divider {
+        display: grid;
+        grid-template-columns: 50% auto;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        & .header__title h1 {
+            margin: 0;
+            font-weight: 100;
+            color: #FFF;
+            font-size: 1.4rem;
+        }
+        & .header__navbar nav ul {
+            text-align: right;
+            list-style: none;
+            margin: 0;
+            li {
+                display: inline-block;
+                font-size: 0.9rem;
+                a {
+                    color: #FFF;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

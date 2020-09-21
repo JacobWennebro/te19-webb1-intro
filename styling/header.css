@@ -1,0 +1,32 @@
+.header {
+  width: 100vw;
+  background-color: lightsalmon;
+}
+
+.header__divider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  width: 80%;
+  margin: auto;
+}
+
+.header__divider .header__title h1 {
+  margin: 0;
+}
+
+.header__divider .header__navbar nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+.header__divider .header__navbar nav ul li {
+  display: inline-block;
+}
+
+.header__divider .header__navbar nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+/*# sourceMappingURL=header.css.map */
